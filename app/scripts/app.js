@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name yapp
+ * @name therapyEvolutionApp
  * @description
  * # yapp
  *
  * Main module of the application.
  */
 angular
-  .module('yapp', [
+  .module('therapyEvolutionApp', [
     'ui.router',
     'ngAnimate'
   ])

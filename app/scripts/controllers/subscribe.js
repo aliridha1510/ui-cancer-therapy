@@ -5,9 +5,9 @@
  * @name yapp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of yapp
+ * Controller of therapyEvolutionApp
  */
-angular.module('yapp')
+angular.module('therapyEvolutionApp')
   .controller('SubscribeCtrl', function($scope, $location) {
 
     $scope.submit = function() {

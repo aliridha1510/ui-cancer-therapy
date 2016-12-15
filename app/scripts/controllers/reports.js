@@ -5,11 +5,9 @@
  * @name yapp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of yapp
+ * Controller of therapyEvolutionApp
  */
-angular.module('yapp')
-  .controller('ReportCtrl', function($scope, $state) {
-
-    $scope.$state = $state;
+angular.module('therapyEvolutionApp')
+  .controller('ReportCtrl', function($scope) {
 
   });

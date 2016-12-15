@@ -5,12 +5,15 @@
  * @name yapp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of yapp
+ * Controller of therapyEvolutionApp
  */
-angular.module('yapp')
-  .controller('DashboardCtrl', function($scope, $state) {
+angular.module('therapyEvolutionApp')
+  .controller('DashboardCtrl', function($scope, $location) {
 
-    $scope.$state = $state;
-    $scope.userAvatar="images/optimist.jpg";
+    $scope.submit = function() {
 
+      $location.path('/dashboard');
+
+      return false;
+    }
   });
