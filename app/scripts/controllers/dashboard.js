@@ -11,5 +11,6 @@ angular.module('yapp')
   .controller('DashboardCtrl', function($scope, $state) {
 
     $scope.$state = $state;
+    $scope.userAvatar="images/optimist.jpg";
 
   });
