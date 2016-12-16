@@ -10,8 +10,9 @@ node {
     sh "npm install bower"
     sh "bower install"
     sh "pwd"
+    sh "gulp clean"
     sh "gulp build"
-    gulp clean
+
     stage 'Deploy '
     sh "cp -Rf dist/*  /var/www/gui-therapy"
 
