@@ -5,7 +5,7 @@ node {
 
     stage 'Build'
     sh "npm install"
-    sh "npm install brower"
+    sh "npm install bower"
     sh "gulp build"
 
     stage 'Deploy to Integration'
