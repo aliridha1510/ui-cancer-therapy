@@ -1,8 +1,6 @@
 
 
 node {
-    env.PATH = "${nodeHome}/bin:${env.PATH}"
-
     checkout scm
 
     stage 'Build'
