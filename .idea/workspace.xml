@@ -28,8 +28,8 @@
       <file leaf-file-name="Jenkinsfile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Jenkinsfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+            <state relative-caret-position="162">
+              <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -598,7 +598,7 @@
       <workItem from="1481812201596" duration="3774000" />
       <workItem from="1481820491950" duration="1010000" />
       <workItem from="1481829318424" duration="2407000" />
-      <workItem from="1481894182113" duration="1654000" />
+      <workItem from="1481894182113" duration="1769000" />
     </task>
     <task id="LOCAL-00001" summary="update build">
       <created>1481821971742</created>
@@ -621,11 +621,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481894420607</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="install bower">
+      <created>1481896481995</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1481896481995</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8845000" />
+    <option name="totallyTimeSpent" value="8960000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
@@ -671,7 +678,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update build" />
     <MESSAGE value="change color" />
-    <option name="LAST_COMMIT_MESSAGE" value="change color" />
+    <MESSAGE value="install bower" />
+    <option name="LAST_COMMIT_MESSAGE" value="install bower" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1032,8 +1040,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Jenkinsfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        <state relative-caret-position="162">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
           <folding />
         </state>
       </provider>
