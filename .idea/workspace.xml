@@ -1,35 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ccd4e8b-68de-4cba-ac3a-bb7cc4871aba" name="Default" comment="add lang">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/.htaccess" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/404.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/flat-avatar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/media.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/optimist.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/robots.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/scripts/oldieshim.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/scripts/scripts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/scripts/vendor.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/styles/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/views/base.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/views/dashboard.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/views/dashboard/overview.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/views/dashboard/reports.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/views/login.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/views/main-content.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/views/subscribe.html" afterPath="" />
+    <list default="true" id="4ccd4e8b-68de-4cba-ac3a-bb7cc4871aba" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/app.js" afterPath="$PROJECT_DIR$/app/scripts/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/lang.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/lang.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
     </list>
     <ignored path="ui-therapy-evolution.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,17 +26,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+            <state relative-caret-position="541">
+              <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gulpfile.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="509">
@@ -134,8 +109,8 @@
         <option value="$PROJECT_DIR$/app/views/lang.html" />
         <option value="$PROJECT_DIR$/app/views/login.html" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/lang.js" />
-        <option value="$PROJECT_DIR$/app/scripts/app.js" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$PROJECT_DIR$/app/scripts/app.js" />
       </list>
     </option>
   </component>
@@ -807,7 +782,7 @@
       <workItem from="1481894182113" duration="6054000" />
       <workItem from="1481908344734" duration="1429000" />
       <workItem from="1482227304216" duration="5645000" />
-      <workItem from="1482238582902" duration="1788000" />
+      <workItem from="1482238582902" duration="1964000" />
     </task>
     <task id="LOCAL-00001" summary="update build">
       <created>1481821971742</created>
@@ -886,11 +861,18 @@
       <option name="project" value="LOCAL" />
       <updated>1482239698470</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="disable jscs gulp">
+      <created>1482240386644</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1482240386644</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22107000" />
+    <option name="totallyTimeSpent" value="22283000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
@@ -941,7 +923,8 @@
     <MESSAGE value="add angular step" />
     <MESSAGE value="fix build" />
     <MESSAGE value="add lang" />
-    <option name="LAST_COMMIT_MESSAGE" value="add lang" />
+    <MESSAGE value="disable jscs gulp" />
+    <option name="LAST_COMMIT_MESSAGE" value="disable jscs gulp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1325,18 +1308,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="509">
           <caret line="148" column="33" selection-start-line="148" selection-start-column="33" selection-end-line="148" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
           <folding />
         </state>
       </provider>

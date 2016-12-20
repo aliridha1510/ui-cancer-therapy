@@ -64,7 +64,7 @@ angular
   var languages = ['en', 'de'];
   $translateProvider.preferredLanguage('de');
   var navigator = window.navigator;
-  var lang = navigatorlanguages ? navigator.languages[0] : null;
+  var lang = navigator.navigatorlanguages ? navigator.languages[0] : null;
   lang = navigator.language || navigator.browserLanguage;
   lang = lang || navigator.language || navigator.userLanguage;
 
