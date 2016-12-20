@@ -15,7 +15,7 @@ angular
     'angular-steps',
     'pascalprecht.translate'
   ])
-  .config(function ($stateProvider, $urlRouterProvider) {
+  .config(function($stateProvider, $urlRouterProvider) {
 
     $urlRouterProvider.when('/dashboard', '/dashboard/overview');
     $urlRouterProvider.otherwise('/login');
@@ -60,21 +60,22 @@ angular
         templateUrl: 'views/dashboard/tests.html'
       });
 
-  }).config(function ($translateProvider) {
-  var languages = ["en", "de"];
+  }).config(function($translateProvider) {
+  var languages = ['en', 'de'];
+  $translateProvider.preferredLanguage('de');
+  var navigator = window.navigator;
+  var lang = navigatorlanguages ? navigator.languages[0] : null;
+  lang = navigator.language || navigator.browserLanguage;
+  lang = lang || navigator.language || navigator.userLanguage;
 
-  $translateProvider.preferredLanguage("de");
-
-  var lang = window.navigator.languages ? window.navigator.languages[0] : null;
-  lang = lang || window.navigator.language || window.navigator.browserLanguage || window.navigator.userLanguage;
-  if (lang.indexOf('-') !== -1)
+  if (lang.indexOf('-') !== -1) {
     lang = lang.split('-')[0];
-
-  if (lang.indexOf('_') !== -1)
+  }
+  if (lang.indexOf('_') !== -1) {
     lang = lang.split('_')[0]
-
+  }
   if (languages.indexOf(lang) !== -1) {
-    console.log(lang + " exist use " + lang);
+    console.log(lang + ' exist use ' + lang);
     $translateProvider.preferredLanguage(lang);
   }
 
