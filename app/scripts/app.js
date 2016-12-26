@@ -16,7 +16,6 @@ angular
     'pascalprecht.translate'
   ])
   .config(function($stateProvider, $urlRouterProvider) {
-
     $urlRouterProvider.when('/dashboard', '/dashboard/overview');
     $urlRouterProvider.otherwise('/login');
 
@@ -98,8 +97,6 @@ angular
     'button.login': 'Se connecter',
     'button.subscribe': 'S\'inscrire'
   });
-
-
 
 }).directive('langDirective', function () {
   return {

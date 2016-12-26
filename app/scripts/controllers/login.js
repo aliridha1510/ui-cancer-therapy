@@ -7,10 +7,10 @@
  * # MainCtrl
  * Controller of therapyEvolutionApp
  */
-angular.module('therapyEvolutionApp', [])
- 
-  .controller('LoginCtrl', ['$scope', '$rootScope', '$location', 'AuthenticationService',
-    function ($scope, $rootScope, $location, AuthenticationService) {
+angular.module('therapyEvolutionApp')
+
+  .controller('LoginCtrl',
+    function ($scope, $rootScope, $location) {
         // reset login status
         AuthenticationService.ClearCredentials();
         $scope.submit = function () {
@@ -25,11 +25,10 @@ angular.module('therapyEvolutionApp', [])
                 }
             });
         };
-    }]);
+    });
 
 
 
 
 
 
-  
