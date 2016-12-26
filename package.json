@@ -53,13 +53,10 @@
     "yargs": "^3.3.1"
   },
   "dependencies": {
-<<<<<<< HEAD
     "gulp-install": "^0.6.0",
     "less": "^2.7.1",
     "styles": "^0.2.1",
-    "wiredep": "^2.2.2"
-=======
+    "wiredep": "^2.2.2",
     "angular-translate-storage-local": "^2.13.1"
->>>>>>> 5d421ffb0fd3a8ed7248fa3924982a4358604cad
   }
 }
