@@ -12,7 +12,8 @@ angular
   .module('therapyEvolutionApp', [
     'ui.router',
     'ngAnimate',
-    'angular-steps'
+    'angular-steps',
+    'pascalprecht.translate'
   ])
   .config(function($stateProvider, $urlRouterProvider) {
 
@@ -59,4 +60,42 @@ angular
         templateUrl: 'views/dashboard/tests.html'
       });
 
+  }).config(function($translateProvider) {
+  var languages = ['en', 'de'];
+  $translateProvider.preferredLanguage('de');
+  var navigator = window.navigator;
+  var lang = navigator.navigatorlanguages ? navigator.languages[0] : null;
+  lang = navigator.language || navigator.browserLanguage;
+  lang = lang || navigator.language || navigator.userLanguage;
+
+  if (lang.indexOf('-') !== -1) {
+    lang = lang.split('-')[0];
+  }
+  if (lang.indexOf('_') !== -1) {
+    lang = lang.split('_')[0]
+  }
+  if (languages.indexOf(lang) !== -1) {
+    console.log(lang + ' exist use ' + lang);
+    $translateProvider.preferredLanguage(lang);
+  }
+
+
+  $translateProvider.translations('en', {
+    'button.login': 'Login',
+    'button.subscribe': 'Subscribe'
   });
+
+  $translateProvider.translations('de', {
+    'button.login': 'Anmeldung',
+    'button.subscribe': 'Abonnieren'
+
+  });
+
+
+}).directive('langDirective', function () {
+  return {
+    restrict: 'EA',
+    controller: 'LangCtrl',
+    templateUrl: 'views/lang.html'
+  };
+});

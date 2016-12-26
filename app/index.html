@@ -12,18 +12,22 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
-    <link href="../bower_components/angular-steps/dist/angular-steps.css" rel="stylesheet">
+   <link rel="stylesheet" href="../bower_components/bootstrap-languages/languages.css"/>
+
 
       <!-- endbuild -->
   </head>
   <body ng-app="therapyEvolutionApp">
+
     <!--[if lt IE 7]>
     <![endif]-->
 
     <!-- Add your site or application content here -->
     <div class="">
+
       <div ui-view></div>
     </div>
+
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script> /*
@@ -50,6 +54,7 @@
     <script src="../bower_components/ui-router/release/angular-ui-router.js"></script>
     <script src="../bower_components/angular-animate/angular-animate.js"></script>
     <script src="../bower_components/angular-steps/dist/angular-steps.js"></script>
+    <script src="../bower_components/angular-translate/angular-translate.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -59,6 +64,8 @@
     <script src="scripts/controllers/dashboard.js"></script>
     <script src="scripts/controllers/subscribe.js"></script>
     <script src="scripts/controllers/tests.js"></script>
+    <script src="scripts/controllers/lang.js"></script>
+
 
     <!-- endbuild -->
   </body>
