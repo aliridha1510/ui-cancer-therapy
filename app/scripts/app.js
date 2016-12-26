@@ -79,7 +79,10 @@ angular
     $translateProvider.preferredLanguage(lang);
   }
 
-
+  $translateProvider.useStaticFilesLoader({
+    prefix: 'languages/',
+    suffix: '.json'
+  });
   $translateProvider.translations('en', {
     'button.login': 'Login',
     'button.subscribe': 'Subscribe'
@@ -90,6 +93,12 @@ angular
     'button.subscribe': 'Abonnieren'
 
   });
+
+  $translateProvider.translations('fr', {
+    'button.login': 'Se connecter',
+    'button.subscribe': 'S\'inscrire'
+  });
+
 
 
 }).directive('langDirective', function () {
