@@ -9,24 +9,37 @@
  */
 angular.module('therapyEvolutionApp')
 
-  .controller('LoginCtrl',
-    function ($scope, $rootScope, $location) {
-        // reset login status
-        AuthenticationService.ClearCredentials();
-        $scope.submit = function () {
-            $scope.dataLoading = true;
-            AuthenticationService.submit($scope.user.email, $scope.user.password, function(response) {
-                if(response.success) {
-                    AuthenticationService.SetCredentials($scope.user.email, $scope.user.password);
-                    $location.path('/dashboard/tests');
-                } else {
-                    $scope.error = response.message;
-                    $scope.dataLoading = false;
-                }
-            });
-        };
-    });
+  .controller('LoginCtrl', function($scope, $location,$http) {
+    /// user is vide in scope//
+ $scope.user = {};
+ // var user=new Object();
+  //     user.email="ali@ali.ali"
+ //     user.password="ali";
+    $scope.submit = function() {
+      /// Model //user.email="ali@ali.de";
+      
+       
 
+/// vorteil :
+      $http.post("http://localhost:8082/cte/authenticate",$scope.user)
+   .then(
+       function(response){
+         // success callback
+               $location.path('/dashboard/tests');
+
+       }, 
+       function(response){
+         // failure callback
+
+       }
+    );
+
+
+
+
+    }
+
+  });
 
 
 
