@@ -9,7 +9,7 @@
  */
 angular.module('therapyEvolutionApp')
 
-  .controller('LoginCtrl', function($scope, $location,$http) {
+  .controller('LoginCtrl', function($scope, $location ,$http ,$window) {
     /// user is vide in scope//
  $scope.user = {};
  // var user=new Object();
@@ -30,6 +30,8 @@ angular.module('therapyEvolutionApp')
        }, 
        function(response){
          // failure callback
+          $scope.message="Error";
+            $scope.messagecolor="alert alert-danger";
 
        }
     );

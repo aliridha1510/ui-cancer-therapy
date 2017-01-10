@@ -10,7 +10,7 @@
                     <h2 class="brand">Therapy
                         <small>Evolution</small>
                     </h2>
-                    <img ng-src="{{userAvatar}}" class="img-circle" width="150" height="150"/> <br/>
+                    <img ng-src="images/fotoprofil.jpg"class="img-circle" width="150" height="150"/> <br/> <br/>
                     <a ui-sref="login" class="btn btn-white btn-outline btn-rounded btn-sm">Logout</a>
                 </div>
 
@@ -18,7 +18,11 @@
                     <li ng-class="{active: $state.includes('overview')}"><a ui-sref="overview">Home <span
                         class="sr-only">(current)</span></a></li>
                     <li ng-class="{active: $state.includes('reports')}"><a ui-sref="reports">Reports</a></li>
-                    <li ng-class="{active: $state.includes('tests')}"><a ui-sref="tests">Tests</a></li>
+                    <li ng-class="{active: $state.includes('tests')}"><a ui-sref="tests">Brust abtasten</a></li>
+                    <li ng-class="{active: $state.includes('tests')}"><a ui-sref="tests">Fragen an den Arzt</a></li>
+                    <li ng-class="{active: $state.includes('reports')}"><a ui-sref="reports">Arzttermine online buchen</a></li>
+                    <li ng-class="{active: $state.includes('geoLoc')}"><a ui-sref="geoLoc">Maps</a></li>
+                    <li ng-class="{active: $state.includes('example')}"><a ui-sref="example">Musik</a></li>
 
                 </ul>
 

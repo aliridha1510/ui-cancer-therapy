@@ -1,0 +1,25 @@
+<div>
+    <h2>Maps<small>Suchen sie nach Arzt  in der nähe</small></h2>
+    <span class="glyphicon glyphicon-dashboard bg-fade"></span>
+    <div class="jumbotron">
+        <div class="container">
+      <div>
+        <gm-map gm-map-id="'therapyEvolutionApp'" gm-center="center" gm-zoom="zoom" class="map">
+        </gm-map>
+      </div>
+      <div>
+      <div ng-app="therapyEvolutionApp" ng-controller="SimpleMapCtrl">
+          <label>
+            Center:
+            <input type="number" ng-model="centerLat" 
+                   ng-change="updateCenter(centerLat, centerLng)"></input>, 
+            <input type="number" ng-model="centerLng" 
+                   ng-change="updateCenter(centerLat, centerLng)"></input>
+          </label>
+          <label>
+            Zoom: <input type="number" ng-model="zoom"></input>
+          </label>
+      </div>
+    </div>
+</div>
+</div>

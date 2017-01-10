@@ -31,11 +31,27 @@ angular
         templateUrl: 'views/login.html',
         controller: 'LoginCtrl'
       })
+      .state('geoLoc', {
+        url: '/geoLoc',
+        parent: 'dashboard',
+        templateUrl: 'views/dashboard/geoLoc.html'
+      })
+      .state('example', {
+        url: '/example',
+        parent: 'dashboard',
+        templateUrl: 'views/dashboard/example.html'
+      })
       .state('subscribe', {
         url: '/subscribe',
         parent: 'base',
         templateUrl: 'views/subscribe.html',
         controller: 'SubscribeCtrl'
+      })
+      .state('password', {
+        url: '/password',
+        parent: 'base',
+        templateUrl: 'views/passwordvergessen.html',
+        controller: 'passwordCtrl'
       })
       .state('dashboard', {
         url: '/dashboard',
@@ -58,6 +74,8 @@ angular
         parent: 'dashboard',
         templateUrl: 'views/dashboard/tests.html'
       });
+      
+
 
   }).config(function($translateProvider) {
   var languages = ['en', 'de'];
