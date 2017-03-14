@@ -22,6 +22,7 @@ angular
     $stateProvider
       .state('base', {
         abstract: true,
+
         url: '',
         templateUrl: 'views/base.html'
       })
@@ -30,6 +31,11 @@ angular
         parent: 'base',
         templateUrl: 'views/login.html',
         controller: 'LoginCtrl'
+      })
+      .state('index', {
+        url: '/index',
+        parent: 'base',
+        templateUrl: 'views/index.html',
       })
       .state('geoLoc', {
         url: '/geoLoc',
@@ -72,9 +78,15 @@ angular
       .state('tests', {
         url: '/tests',
         parent: 'dashboard',
-        templateUrl: 'views/dashboard/tests.html'
-      });
+        templateUrl: 'views/dashboard/tests.html',
+        controller: 'TestCtrl'
+      })
       
+      .state('frage', {
+        url: '/frage',
+        parent: 'dashboard',
+        templateUrl: 'views/dashboard/frage.html'
+      });
 
 
   }).config(function($translateProvider) {

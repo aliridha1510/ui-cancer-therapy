@@ -1,25 +1,29 @@
 <div>
-    <h2>Maps<small>Suchen sie nach Arzt  in der nähe</small></h2>
-    <span class="glyphicon glyphicon-dashboard bg-fade"></span>
-    <div class="jumbotron">
-        <div class="container">
-      <div>
-        <gm-map gm-map-id="'therapyEvolutionApp'" gm-center="center" gm-zoom="zoom" class="map">
-        </gm-map>
-      </div>
-      <div>
-      <div ng-app="therapyEvolutionApp" ng-controller="SimpleMapCtrl">
-          <label>
-            Center:
-            <input type="number" ng-model="centerLat" 
-                   ng-change="updateCenter(centerLat, centerLng)"></input>, 
-            <input type="number" ng-model="centerLng" 
-                   ng-change="updateCenter(centerLat, centerLng)"></input>
-          </label>
-          <label>
-            Zoom: <input type="number" ng-model="zoom"></input>
-          </label>
-      </div>
+<link rel="stylesheet"
+  href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css">
+<style>
+#map {
+  height: 500px;
+  width: 1500px;
+}
+
+.infoWindowContent {
+  font-size: 14px !important;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+h2 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+</style>
+
+
+
+<div ng-app="therapyEvolutionApp" ng-controller="SimpleMapCtrl">
+    <div id="map"></div>
+    <div id="class" ng-repeat="marker in markers | orderBy : 'title'">
+         <a href="#" ng-click="openInfoWindow($event, marker)">{{marker.title}}</a>
     </div>
-</div>
 </div>

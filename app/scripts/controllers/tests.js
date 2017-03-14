@@ -9,9 +9,18 @@
  */
 angular.module('therapyEvolutionApp')
   .controller('TestCtrl', function($scope, $location,$http) {
-
-  
+var user=new Object();
+  user.resul_final=true;
  $scope.user = {};
+
+ 
+ 
+ $scope.logConsole = function () {
+    console.log("Value is : " + $scope.user);
+    console.log("Type is : " + typeof $scope.user); //Always displays 'string'
+};
+
+ 
  
     $scope.submit = function() {
       
@@ -34,6 +43,6 @@ angular.module('therapyEvolutionApp')
 
 
 
-    }
-
+   
+}
   });

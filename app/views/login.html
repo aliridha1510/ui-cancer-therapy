@@ -1,40 +1,105 @@
-<!--
-Inspired by http://dribbble.com/shots/917819-iPad-Calendar-Login?list=shots&sort=views&timeframe=ever&offset=461
--->
+
 
 <div class="login-page">
-
     <div lang-directive></div>
-
     <div class="row">
-        <div class="col-md-4 col-lg-4 col-md-offset-4 col-lg-offset-4">
-            <h1>Therapy
-                <small>Evolution</small>
-            </h1>
-            <img src="images/cancer.jpg" class="img-circle" width="304" height="236"/>
+<div class="col-md-4 col-lg-4 col-md-offset-4 col-lg-offset-4">
 
-            <form role="form" ng-submit="submit()">
+<!-- Navbar -->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Portfolio</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+            <h1>Therapy
+                <small>Evolution</small> 
+            </h1>
+        
+       
+          
+            <img src="images/acc.JPG" class="img-circle" width="100%" height="236"/>
+            <form role="form" ng-submit="submit()" novalidate>
 
 				<div class="form-content">
 					<div class="form-group">
-						
-						<input type="text" class="form-control input-underline input-lg" id="" placeholder="Email" required ng-model=user.email>
+
+						<input type="email" class="form-control input-underline input-lg" id="" placeholder="Email" required ng-model=user.email>
+						</div>
 					</div>
 
 					<div class="form-group">
-						<input type="password" class="form-control input-underline input-lg" id="" placeholder="Password" required ng-model=user.password>
-					</div>
+
+						<input type="password" class="form-control input-underline input-lg" id="" placeholder="Password" required ng-model=user.password></div>
+					
 					<br/>
-					<div>          <a ui-sref="password" >Forgot account?</a>
-				</div>
-
+				
 				<button type="submit" class="btn btn-white btn-outline btn-lg btn-rounded">Login</button>
-                                 <a ui-sref="subscribe" >Registrieren</a>
-
+				<button type="submit" class="btn btn-white btn-outline btn-lg btn-rounded"> <a ui-sref="subscribe" >Registrieren</a></button><br/>
+                                
+                    <div><a ui-sref="password" >Konto vergessen??</a></div><br><br/>
+                    <div><a ui-sref="index" >index</a></div><br><br/>
 
             </form>
+	
+
 
         </div>
     </div>
 
+	<section id="footer">
+            	
+			<ul class="icons">
+			
+				<a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a>
+				<a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a>
+				
+			</ul>
+
+			<br><br>
+			 <!-- Add Google Maps -->
+<div id="googleMap" style="height:400px;width:100%;"></div>
+<script>
+function myMap() {
+var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({position:myCenter});
+marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+			<div class="copyright">
+				<ul class="menu">
+					&copy; Untitled. All rights reserved.Design: <a href="#">Haouari Ali</a>
+				</ul>
+			</div>
+		</section>
 </div>
+
+  </div>
+
+</div>
+
+
+
+ 
+  </div>
